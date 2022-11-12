@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{Project title (short)}</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>{Full project title}</h1>
+      <div>Name: YOURNAME; E-Mail: YOUREMAIL; UID: u0123456</div>
+      <div>Name: YOURNAME; E-Mail: YOUREMAIL; UID: u0123456</div>
+    </header>
+
+    <div class="container">
+      <h2>{Project subtitle}</h2>
+      <p>{Project description}</p>
+      <div class="charts">
+        <div class="subContainer">
+          <div class="bubbleGroup">
+            <button onclick="onClear()">Clear</button>
+            <div class="bubble"></div>
+          </div>
+          <div class="lineChart"></div>
+          <div class="dendoGroup">
+            <label for="select">Group by:</label>
+            <select name="select" id="select" onchange="selectGroup(value)">
+              <option value="countries" selected>Countries</option>
+              <option value="ownership">Ownership</option>
+            </select>
+            <div class="dendogram"></div>
+          </div>
+        </div>
+        <div>
+          <div class="parallel"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/dendogram.js"></script>
+    <script src="scripts/bubble.js"></script>
+    <script src="scripts/line.js"></script>
+    <script src="scripts/parallelCordinates.js"></script>
+  </body>
+</html>
