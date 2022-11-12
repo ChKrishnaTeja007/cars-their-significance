@@ -1,0 +1,8 @@
+.container {
+  padding: 5%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: row;
+}
